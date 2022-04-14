@@ -1,0 +1,94 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+.login{
+    width: 350px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 200px auto;
+    padding: 18px 15px 17px;
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Spoqa Han Sans Neo';
+    margin-bottom: 16px;
+    
+}
+
+.login_button {
+    display: inline-block;
+    width: 318px;
+    background: #711BFF;
+    border-radius: 4px;
+    padding: 10px 108px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo';
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 64px;
+    vertical-align: -4px;
+}
+
+.box{
+    overflow: hidden;
+    margin-top: 17px;
+}
+
+.idpw{
+    float: left;
+}
+
+.id,.pw,.signup{
+    font-family: 'Spoqa Han Sans Neo';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #767676;
+}
+.signup{
+    float: right;
+}
+
+.signup::before{
+    content: '';
+    display: inline-block;
+    background: url(img/icon-user.png) no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+.id::before{
+    content: '';
+    display: inline-block;
+    background: url(img/icon-lock.png) no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+
+.id::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    vertical-align: -2px;
+    margin: 0 5px;
+    background-color: #767676;
+} 
