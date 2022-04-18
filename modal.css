@@ -40,13 +40,14 @@ body{
 }
 
 .close{
+    z-index: 999;
     background-image: url(/img/close.png);
     background-size: 16px;
     width: 16px;
     height: 16px;
     position: absolute;
     border: none;
-    background-color: transparent;
+    /* background-color: transparent; */
     right:24px;
     top:22px;
 }
