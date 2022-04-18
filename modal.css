@@ -41,7 +41,7 @@ body{
 
 .close{
     z-index: 999;
-    background-image: url(/img/close.png);
+    background-image: url(./img/close.png);
     background-size: 16px;
     width: 16px;
     height: 16px;
