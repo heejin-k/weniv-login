@@ -40,20 +40,24 @@
             <a href="" class="btn naver"><img class="snsimg" src="img/naver.png">네아버 계정으로 로그인</a>
             <a href="" class="btn kakao"><img class="snsimg" src="img/kakao.png">카카오 계정으로 로그인</a>
         </section>
-        <button type="button" class="close" id="close" onclick="close();" ></button>
+        <button type="button" class="close" id="close" onclick="gomodal();" ></button>
     </article>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <script>
-        function gomodal() {
-            $('#login').hide();
-            $('#modal_login').show();
-        }
+        // function gomodal() {
+        //     $('#login').hide();
+        //     $('#modal_login').show();
+        // }
 
-        function close() {
-            console.log(hello);
-            // $('#modal_login').hide(console.log());
-            // $('#login').show();
+        // function close_modal() {
+        //     $('#modal_login').hide();
+        //     $('#login').show();
+        // }
+
+        function gomodal() {
+            $('#login').toggle();
+            $('#modal_login').toggle();
         }
     </script>
 </body>
