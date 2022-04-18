@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loginstyle.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="modal.css">
     <title>위니브 로그인</title>
 </head>
 
 <body>
-    <article class="login">
+    <article class="login" id="login">
         <img class="logo" src="./img/weniv.png" alt="weniv">
         <p class="content">위니브를 더 즐겁고 편리하게 이용하세요.</p>
-        <a class="login_button" href="login2.html">로그인</a>
+        <button type="submit" class="login_button" id="#go_modal_login" onclick="gomodal();">로그인</button>
     </article>
+
+    <article class="modal_login" id="modal_login">
+        <section class="header">
+            <h2 class="title">로그인 또는 회원가입</h2>
+        </section>
+        <section class="wrap">
+            <h2 class="modal_content">위니브에서 여러분의 궁금증을 해결하세요!:)</h2>
+            <form>
+                <input id="id" type="text" placeholder="아이디" required>        <input id="pw" type="text" placeholder="비밀번호">      <label class="checklabel">
+                    <input type="radio" name="" id="logincheck">  로그인 상태 유지
+                </label>
+                <button type="submit" class="modal_login_button">로그인</button>
+            </form>
+            
+            <div class="link_wrap">
+                <a class="sign" href="">회원가입</a>
+                <a class="find" href="">아이디/비밀번호 찾기</a>
+            </div>
+            <p class="line">또는</p>
+            <a href="" class="btn google"><img class="snsimg" src="img/Google.png">구글 계정으로 로그인</a>
+            <a href="" class="btn facebook"><img class="snsimg" src="img/facebook.png">페이스북 계정으로 로그인</a>
+            <a href="" class="btn naver"><img class="snsimg" src="img/naver.png">네아버 계정으로 로그인</a>
+            <a href="" class="btn kakao"><img class="snsimg" src="img/kakao.png">카카오 계정으로 로그인</a>
+        </section>
+        <button type="button" class="close" id="close" onclick="close();" ></button>
+    </article>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>
+        function gomodal() {
+            $('#login').hide();
+            $('#modal_login').show();
+        }
+
+        function close() {
+            $('#modal_login').hide();
+            $('#login').show();
+        }
+    </script>
 </body>
 </html>

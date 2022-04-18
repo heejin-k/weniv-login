@@ -13,14 +13,15 @@ body{
     background-color: #F2F2F2;;
 }
 
-.login{
+.modal_login{
+    display: none;
     width: 520px;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 10px;
     margin: 150px auto;
-    
+    position: relative;
 }
 .header{
     border-bottom:1px solid #C4C4C4;
@@ -38,20 +39,21 @@ body{
 
 }
 
-.title::after{
-    content: "";
-    background-image: url(img/close.png);
+.close{
+    background-image: url(/img/close.png);
     background-size: 16px;
     width: 16px;
     height: 16px;
     position: absolute;
+    border: none;
+    background-color: transparent;
     right:24px;
     top:22px;
 }
 .wrap{
     padding: 26px 23px 24px;
 }
-.content{
+.modal_content{
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
@@ -91,7 +93,7 @@ color: #767676;
 font-family: 'Spoqa Han Sans Neo';
 }
 
-.login_button{
+.modal_login_button{
 display: inline-block;
 width: 472px;
 background: #2F80ED;
