@@ -3,7 +3,7 @@
 
 
 /* reset */
-h1,h2,body{
+h1,h2,body,#logincheck{
     margin: 0;
     padding: 0;
 }
@@ -39,10 +39,29 @@ body{
 
 }
 
+input[type="radio"]{
+    display: none;
+}
+
+#logincheck{
+    content: url(./img/check.png);
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#logincheck:checked{
+    content: url(./img/checked.png);
+    margin-right: 8px;
+}
+
+
 .close{
-    z-index: 999;
     background-image: url(./img/close.png);
     background-size: 16px;
+    z-index: 3;
     width: 16px;
     height: 16px;
     position: absolute;
@@ -51,6 +70,7 @@ body{
     right:24px;
     top:22px;
 }
+
 .wrap{
     padding: 26px 23px 24px;
 }
@@ -180,20 +200,58 @@ font-family: 'Spoqa Han Sans Neo';
     margin-bottom: 10px;
 }
 
-.snsimg{
+/* .snsimg{
     width: 28px;
     float: left;
     text-align: center;
+} */
+
+.google::before{
+    content: '';
+    background-image: url(./img/sprites_4x.png);
+    background-position: -150px -150px;
+    background-size: 60px;
+    float: left;
+    width: 28px;
+    height: 28px;
 }
 
 .facebook{
     border: 1px solid #2D9CDB;
 }
 
-.naver{
-    border: 1px solid #00BF18;
+.facebook::before{
+    content: '';
+    background-image: url(./img/sprites_4x.png);
+    background-position: 0 -150px;;
+    background-size: 60px;
+    float: left;
+    width: 28px;
+    height: 28px;
 }
 
+.naver::before{
+    content: '';
+    background-image: url(./img/sprites_4x.png);
+    background-position: 150px 0;
+    background-size: 60px;
+    float: left;
+    width: 28px;
+    height: 28px;
+}
+.naver{
+    border: 1px solid #00BF18;
+
+}
+.kakao::before{
+    content: '';
+    background-image: url(./img/sprites_4x.png);
+    background-position: 0 0;
+    background-size: 60px;
+    float: left;
+    width: 28px;
+    height: 28px;
+}
 .kakao{
     border: 1px solid #F2C94C;
 }
