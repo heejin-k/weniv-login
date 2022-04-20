@@ -55,6 +55,7 @@ input[type="radio"]{
 #logincheck:checked{
     content: url(./img/checked.png);
     margin-right: 8px;
+    outline: 1px solid black;
 }
 
 
@@ -208,23 +209,19 @@ font-family: 'Spoqa Han Sans Neo';
 
 .google::before{
     content: '';
-    background-image: url(./img/sprites_4x.png);
-    background-position: -150px -150px;
-    background-size: 60px;
+    background-image: url(./img/css_sprites_test.png);
+    background-size: 76px;
+    background-position:  -43px -5px;
     float: left;
     width: 28px;
     height: 28px;
 }
 
-.facebook{
-    border: 1px solid #2D9CDB;
-}
-
 .facebook::before{
     content: '';
-    background-image: url(./img/sprites_4x.png);
-    background-position: 0 -150px;;
-    background-size: 60px;
+    background-image: url(./img/css_sprites_test.png);
+    background-size: 76px;
+    background-position:  -5px -5px;
     float: left;
     width: 28px;
     height: 28px;
@@ -232,26 +229,32 @@ font-family: 'Spoqa Han Sans Neo';
 
 .naver::before{
     content: '';
-    background-image: url(./img/sprites_4x.png);
-    background-position: 150px 0;
-    background-size: 60px;
+    background-image: url(./img/css_sprites_test.png);
+    background-size: 76px;
+    background-position: -43px -43px;
     float: left;
     width: 28px;
     height: 28px;
+}
+
+.kakao::before{
+    content: '';
+    background-image: url(./img/css_sprites_test.png);
+    background-size: 76px;
+    background-position: -5px -43px;
+    float: left;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.kakao{
+    border: 1px solid #F2C94C;
+}
+.facebook{
+    border: 1px solid #2D9CDB;
 }
 .naver{
     border: 1px solid #00BF18;
-
-}
-.kakao::before{
-    content: '';
-    background-image: url(./img/sprites_4x.png);
-    background-position: 0 0;
-    background-size: 60px;
-    float: left;
-    width: 28px;
-    height: 28px;
-}
-.kakao{
-    border: 1px solid #F2C94C;
 }
